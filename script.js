@@ -1,5 +1,5 @@
 const number = document.querySelector('.Numbers');
-const letter = document.querySelector('.Letters');
+const letter = document.querySelector('.Colors');
 const shape = document.querySelector('.Shapes');
 
 function navigateToActivity(activity) {
@@ -11,7 +11,7 @@ number.addEventListener('click', function() {
 });
 
 letter.addEventListener('click', function() {
-    navigateToActivity('letters');
+    navigateToActivity('colors');
 });
 
 shape.addEventListener('click', function() {

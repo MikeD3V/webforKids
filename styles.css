@@ -1,54 +1,56 @@
-*{
-    box-sizing: border-box;
-}
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #fff;
     margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-h1{
-    text-align: center;
-}
-p{
-    text-align: center;
-    font-weight: bold;
-}
-.container{
-    display: flex;
-    flex-direction: row;
     gap: 20px;
+    margin-top: 50px;
     flex-wrap: wrap;
 }
 
-
-.option{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    width: 300px;
-    border: 1px solid black;
-    border-radius: 4px;
-    overflow: hidden;
-    transition: all 0.5s;
-}
-.option:hover{
-    background-color: #f0f0f0;
+.option {
+    width: 150px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    transform: scale(1.1);
+    text-align: center;
 }
-.option:active{
-    opacity: .8;
-}
+
 .option img {
-    height: 90%;
-    width: 90%;
-    object-fit: fill;
+    width: 100px;
+    height: auto;
+}
+
+.option p {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.option:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
