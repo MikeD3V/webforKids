@@ -3,7 +3,7 @@ const letter = document.querySelector('.Colors');
 const shape = document.querySelector('.Shapes');
 
 function navigateToActivity(activity) {
-    window.location.href = `activity/${activity}.html`;
+    window.location.href = `${activity}.html`;
 }
 
 number.addEventListener('click', function() {
